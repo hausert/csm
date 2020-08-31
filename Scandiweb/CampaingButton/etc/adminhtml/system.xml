@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="scandiweb" translate="label" sortOrder="10">
+            <label>Scandiweb</label>
+        </tab>
+        <section id="campaingbutton" translate="label" sortOrder="130" showInDefault="0" showInWebsite="0" showInStore="1">
+            <class>separator-top</class>
+            <label>Campaing Button</label>
+            <tab>scandiweb</tab>
+            <resource>Scandiweb_CampaingButton::campaingbutton_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="0" showInWebsite="0" showInStore="1">
+                <label>Set Hex Color</label>
+                <field id="hex_color" translate="label" type="text" sortOrder="1" showInDefault="0" showInWebsite="0" showInStore="1">
+                    <label>Hex Color</label>
+                    <comment>Set the  hex color will showing the button on the frontend.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,7 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="Scandiweb\CampaingButton\Block\Campaing" name="add_style_button_on_head" template="Scandiweb_CampaingButton::default/campaing.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

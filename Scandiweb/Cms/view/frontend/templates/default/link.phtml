@@ -1,0 +1,5 @@
+<?php if ($this->isCsmPage()):?>
+    <?php foreach ($this->getStoresRelatedToCms() as $stores):?>
+        <link rel="alternate" hreflang="<?php echo $this->getLocaleForStores($stores->getId());?>" href="<?php echo $stores->getBaseUrl('web').$this->getIdentifier();?>" />
+    <?php endforeach;?>
+<?php endif;?>
