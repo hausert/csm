@@ -8,6 +8,9 @@ use Magento\Framework\View\Element\Template\Context;
 
 class Link extends \Magento\Framework\View\Element\Template
 {
+
+    const GENERAL_LOCALE_CODE = 'general/locale/code';
+
     /**
      * @var \Magento\Cms\Model\Page Page
      */
@@ -95,7 +98,7 @@ class Link extends \Magento\Framework\View\Element\Template
      */
     public function getLocaleForStores($storeId)
     {
-        return $this->_scopeConfig->getValue('general/locale/code', \Magento\Store\Model\ScopeInterface::SCOPE_STORE, $storeId);
+        return $this->_scopeConfig->getValue(self::GENERAL_LOCALE_CODE, \Magento\Store\Model\ScopeInterface::SCOPE_STORE, $storeId);
     }
 
 }
